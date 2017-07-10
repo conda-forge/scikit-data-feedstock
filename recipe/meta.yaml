@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py2k and py<34]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
@@ -20,21 +20,8 @@ requirements:
   build:
     - python
     - setuptools
-    - pandas
-    - numpy >=1.12
-    - scikit-learn
-    - matplotlib
-    - jupyter
-    - ipywidgets
-    - ipython
   run:
     - python
-    - numpy >=1.12
-    - scikit-learn
-    - matplotlib
-    - jupyter
-    - ipywidgets
-    - ipython
 
 test:
   imports:
