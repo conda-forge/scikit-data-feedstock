@@ -22,11 +22,12 @@ requirements:
     - setuptools
   run:
     - python
-    - numpy >=1.12		
-    - scikit-learn		
-    - matplotlib		
-    - jupyter		
-    - ipywidgets		
+    - pandas
+    - numpy >=1.12
+    - scikit-learn
+    - matplotlib
+    - jupyter
+    - ipywidgets
     - ipython
 
 test:
