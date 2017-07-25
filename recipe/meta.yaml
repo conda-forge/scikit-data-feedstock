@@ -1,6 +1,6 @@
 {% set name = "scikit-data" %}
-{% set version = "0.1.0" %}
-{% set sha256 = "bf1a05bb590a202b48bfaf154d875e4e1ab6261ab42e20a2c389b8e1c626c575" %}
+{% set version = "0.1.2" %}
+{% set sha256 = "d0f17db22e718272f9914cfe11069bea890ef6912b7409beebc72beb52a69253" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: True  # [py2k and py<34]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
