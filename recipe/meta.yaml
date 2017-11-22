@@ -1,6 +1,6 @@
 {% set name = "scikit-data" %}
 {% set version = "0.1.3" %}
-{% set sha256 = "697b9da63fbdc63dd85c9f1330f33171ea65ec5f77723b088c7df71b994d334b" %}
+{% set sha256 = "d933e9822f7f8d1bb120ba313b64c45ea73e0d97c9b322797f3cfe42e3113428" %}
 
 package:
   name: {{ name|lower }}
