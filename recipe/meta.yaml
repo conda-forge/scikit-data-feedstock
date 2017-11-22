@@ -29,6 +29,9 @@ requirements:
     - jupyter
     - ipywidgets
     - ipython
+    - odo
+    - scipy
+    - h5py
 
 test:
   imports:
