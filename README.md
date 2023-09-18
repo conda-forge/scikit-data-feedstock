@@ -1,11 +1,11 @@
-About scikit-data
-=================
+About scikit-data-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scikit-data-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/OpenDataScienceLab/skdata
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scikit-data-feedstock/blob/main/LICENSE.txt)
 
 Summary: The propose of this library is to allow the data analysis process more easy and automatic.
 
