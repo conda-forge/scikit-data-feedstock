@@ -1,41 +1,43 @@
 {% set name = "scikit-data" %}
 {% set version = "0.1.3" %}
-{% set sha256 = "d933e9822f7f8d1bb120ba313b64c45ea73e0d97c9b322797f3cfe42e3113428" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/scikit-data-{{ version }}.tar.gz
+  sha256: d933e9822f7f8d1bb120ba313b64c45ea73e0d97c9b322797f3cfe42e3113428
 
 build:
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
   number: 1004
-  skip: True  # [py2k or py<35]
-  script: python setup.py install --single-version-externally-managed --record record.txt
-
+  
 requirements:
   host:
-    - python
-    - setuptools
+    - python >=3.6
+    - pip
   run:
-    - python
+    - python >=3.6
     - pandas
     - numpy >=1.12
+    - scipy
     - scikit-learn
     - matplotlib-base
+    - ipython
     - jupyter
     - ipywidgets
-    - ipython
-    - odo
-    - scipy
     - h5py
+    - odo
 
 test:
   imports:
     - skdata
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: http://github.com/OpenDataScienceLab/skdata
